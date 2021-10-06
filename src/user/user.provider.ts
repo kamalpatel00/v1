@@ -1,6 +1,6 @@
+import { injectedConsts } from 'src/constants';
 import { User } from './entities/user.entity';
 import { Connection } from 'typeorm';
-import { injectedConsts } from './../constants';
 
 export const userProvider = [
   {
