@@ -5,6 +5,7 @@ import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DBConstants } from '../database-constants';
+import { GoogleStrategy } from './google.strategy';
 
 @Module({
   imports: [
@@ -30,6 +31,6 @@ import { DBConstants } from '../database-constants';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, GoogleStrategy],
 })
 export class AppModule {}
